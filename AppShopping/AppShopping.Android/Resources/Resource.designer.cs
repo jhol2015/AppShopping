@@ -11821,16 +11821,19 @@ namespace AppShopping.Droid
 			public const int pin = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int test_custom_background = 2131165339;
+			public const int splashscreen = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int TitleViewLogo = 2131165340;
+			public const int test_custom_background = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int tooltip_frame_dark = 2131165341;
+			public const int TitleViewLogo = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int tooltip_frame_light = 2131165342;
+			public const int tooltip_frame_dark = 2131165342;
+			
+			// aapt resource value: 0x7F07009F
+			public const int tooltip_frame_light = 2131165343;
 			
 			static Drawable()
 			{

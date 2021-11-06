@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:AppShopping.Views"
+            x:Class="AppShopping.Menu">
+
+    <FlyoutItem Title="Principais">
+        
+    </FlyoutItem>
+    <ShellContent Title="Lojas" Icon="MenuIconStore.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Cinema" Icon="MenuIconCinema.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Ticket" Icon="MenuIconTicket.png" ContentTemplate="{DataTemplate views:Stores}"/>
+</Shell>

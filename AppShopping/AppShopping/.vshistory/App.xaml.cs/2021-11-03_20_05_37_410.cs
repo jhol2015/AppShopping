@@ -10,7 +10,7 @@ namespace AppShopping
         {
             InitializeComponent();
 
-            MainPage = new Menu();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

@@ -8,7 +8,7 @@
             <Style TargetType="Label" x:Key="MenuHeaderLabel">
                 <Setter Property="FontFamily" Value="MontserratBold"/>
                 <Setter Property="FontSize" Value="12"/>
-                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="TextColor" Value="#ffffff"/>
 
             </Style>
         </ResourceDictionary>

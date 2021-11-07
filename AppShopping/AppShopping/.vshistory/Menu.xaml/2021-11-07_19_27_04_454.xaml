@@ -2,11 +2,9 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:AppShopping.Views"
-            xmlns:viewModels="clr-namespace:AppShopping.ViewModels"
             x:Class="AppShopping.Menu">
 
     <Shell.FlyoutHeader>
-        
         <Grid Padding="0, 25" BackgroundColor="{StaticResource PrimaryColor}" ColumnDefinitions="1*,2*" RowDefinitions="Auto, Auto">
             <Image Source="BagWhite" Grid.RowSpan="2" />
 
@@ -15,15 +13,15 @@
         </Grid>
     </Shell.FlyoutHeader>
     <FlyoutItem Title="Principais" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Lojas" Icon="MenuIconStore" ContentTemplate="{DataTemplate views:Stores}" />
-        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant" ContentTemplate="{DataTemplate views:Restaurants}" />
-        <ShellContent Title="Cinema" Icon="MenuIconCinema" ContentTemplate="{DataTemplate views:Cinema}" />
-        <ShellContent Title="Ticket" Icon="MenuIconTicket" ContentTemplate="{DataTemplate views:TicketScan}" />
+        <ShellContent Title="Lojas" Icon="MenuIconStore.png" ContentTemplate="{DataTemplate views:Stores}" />
+        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant.png" ContentTemplate="{DataTemplate views:Restaurants}" />
+        <ShellContent Title="Cinema" Icon="MenuIconCinema.png" ContentTemplate="{DataTemplate views:Cinema}" />
+        <ShellContent Title="Ticket" Icon="MenuIconTicket.png" ContentTemplate="{DataTemplate views:TicketScan}" />
     </FlyoutItem>
 
-    <ShellContent Title="Novidades" Icon="MenuIconNews" ContentTemplate="{DataTemplate views:News}" />
+    <ShellContent Title="Novidades" Icon="MenuIconNews.png" ContentTemplate="{DataTemplate views:News}" />
     <!--<ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />-->
-    <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps" Command="{Binding OpenMapCommand}" />
-    <ShellContent Title="Wifi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Wifi}" />
-    
+    <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps.png" Command="{Binding OpenMapCommand}" />
+    <ShellContent Title="Wifi" Icon="MenuIconWifi.png" ContentTemplate="{DataTemplate views:Wifi}" />
+
 </Shell>

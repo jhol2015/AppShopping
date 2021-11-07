@@ -2,11 +2,26 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:views="clr-namespace:AppShopping.Views"
-            xmlns:viewModels="clr-namespace:AppShopping.ViewModels"
             x:Class="AppShopping.Menu">
 
     <Shell.FlyoutHeader>
-        
+        <!--<Grid Margin="0, 0" ColumnDefinitions="1*, 3*" RowDefinitions="Auto, Auto" BackgroundColor="#1E90FF">
+            <Image Source="BagWhite.png" Grid.RowSpan="5"/>
+
+            <Label Text="Bem Vindo!" Grid.Column="1" Style="{StaticResource MenuHeaderLabel}"/>
+            <Image Source="LogoWhite.png" Grid.Column="1" Grid.Row="1"/>
+        </Grid>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="Principais" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Lojas" Icon="MenuIconStore.png" ContentTemplate="{DataTemplate views:Stores}"/>
+        <ShellContent Title="Restaurantes" Icon="MenuIconRestaurant.png" ContentTemplate="{DataTemplate views:Stores}"/>
+        <ShellContent Title="Cinema" Icon="MenuIconCinema.png" ContentTemplate="{DataTemplate views:Stores}"/>
+        <ShellContent Title="Ticket" Icon="MenuIconTicket.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    </FlyoutItem>
+    <ShellContent Title="Novidades" Icon="MenuIconNews.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Como Chegar" Icon="MenuIconMaps.png" ContentTemplate="{DataTemplate views:Stores}"/>
+    <ShellContent Title="Wi-Fi" Icon="MenuIconWifi.png" ContentTemplate="{DataTemplate views:Stores}"/>-->
+
         <Grid Padding="0, 25" BackgroundColor="{StaticResource PrimaryColor}" ColumnDefinitions="1*,2*" RowDefinitions="Auto, Auto">
             <Image Source="BagWhite" Grid.RowSpan="2" />
 
@@ -25,5 +40,4 @@
     <!--<ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />-->
     <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps" Command="{Binding OpenMapCommand}" />
     <ShellContent Title="Wifi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Wifi}" />
-    
 </Shell>

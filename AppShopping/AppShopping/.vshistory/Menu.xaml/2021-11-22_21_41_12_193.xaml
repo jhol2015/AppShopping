@@ -21,9 +21,9 @@
         <ShellContent Title="Ticket" Icon="MenuIconTicket" ContentTemplate="{DataTemplate views:Stores}" />
     </FlyoutItem>
 
-    <ShellContent Title="Novidades" Icon="MenuIconNews" ContentTemplate="{DataTemplate views:Stores}" />
+    <ShellContent Title="Novidades" Icon="MenuIconNews" ContentTemplate="{DataTemplate views:News}" />
     <!--<ShellContent Title="Como chegar" Icon="MenuIconMaps" ContentTemplate="{DataTemplate views:Stores}" />-->
     <MenuItem Text="Como chegar" IconImageSource="MenuIconMaps" Command="{Binding OpenMapCommand}" />
-    <ShellContent Title="Wifi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Stores}" />
+    <ShellContent Title="Wifi" Icon="MenuIconWifi" ContentTemplate="{DataTemplate views:Wifi}" />
 
 </Shell>

@@ -14,9 +14,8 @@
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
-    <!--essas linhas deixam a barra de cima do android da cor que definir na primeira linha-->
-        <item name="android:statusBarColor">#FFFFFF</item> 
-        <item name="android:windowLightStatusBar">true</item>
+    <item name="android:statusBarColor">#FFFFFF</item>
+    <item name="android:windowLightStatusBar">true</item>
   </style>
     <style name="MainTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
       <item name="android:windowBackground">@drawable/splashscreen</item>

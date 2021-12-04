@@ -167,7 +167,7 @@ namespace AppShopping.Services
                 {
                     Id = 16,
                     Type = EstablishmentType.Store,
-                    Logo = "https://logodownload.org/wp-content/uploads/2017/07/caterpillar-logo-cat.png",
+                    Logo = "https://scontent.fbsb16-1.fna.fbcdn.net/v/t1.0-9/73057735_2792663367412106_2803336995324035072_n.png?_nc_cat=109&ccb=2&_nc_sid=09cbfe&_nc_ohc=eWlalGifPSUAX-fNdXh&_nc_ht=scontent.fbsb16-1.fna&oh=6bb8b45e83b5d8b4c4ac866e4f4461b1&oe=6008A509",
                     Name = "COOL CAT",
                     Description = "A Cool Cat é uma loja de roupas casuais para homens e mulheres, com foco na moda surfware e streetware.",
                     Address = "1 Andar - Loja 36 - Entrada Sul",

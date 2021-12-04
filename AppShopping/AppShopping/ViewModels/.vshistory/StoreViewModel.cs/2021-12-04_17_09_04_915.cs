@@ -7,41 +7,27 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using AppShopping.Libraries.Enums;
-using AppShopping.Libraries.Helpers.MVVM;
 
 namespace AppShopping.ViewModels
 {
-    internal class StoreViewModel : BaseViewModel
+    internal class StoreViewModel
     {
         public string SearchWord { get; set; }
         public ICommand SearchCommand { get; set; }
-        private List<Establishment> _establishments;
-        public List<Establishment> Establishments { 
-            get {
-                return _establishments;   
-            }
-            set {
-                SetProperty (ref _establishments, value);
-            } 
-        }
-
-        private List<Establishment> _allEstablishments;
+        public List<Establishment> Establishments { get; set; }
        
         public StoreViewModel()
         {
             SearchCommand = new Command(Search);
 
-            //Representa a busca na API
             var allEstablishment = new EstablishmentService().GetEstablishments();
             var allStores = allEstablishment.Where(a => a.Type == EstablishmentType.Store).ToList();
-
             Establishments = allStores;
-            _allEstablishments = allStores;
         }
 
         private void Search()
         {
-            Establishments =  _allEstablishments.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();   
+            //Todo - Logica de filtar a lista de lojas.
         }
 
     }

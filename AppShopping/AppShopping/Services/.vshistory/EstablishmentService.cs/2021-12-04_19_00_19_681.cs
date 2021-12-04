@@ -33,7 +33,7 @@ namespace AppShopping.Services
                     Description = "Company",
                     Address = "2º Andar - Loja 05 - Setor bueno",
                     Phone = "(62) 88888-8888"
-                },
+                }
 
                 new Establishment()
                 {

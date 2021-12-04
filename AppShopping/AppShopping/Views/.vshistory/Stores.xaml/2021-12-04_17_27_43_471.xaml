@@ -8,7 +8,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar"/>
+            <Entry Placeholder="Pesquisar"/>
             <Button Command="{Binding SearchCommand}" Text="Ok"/>
             <CollectionView ItemsSource="{Binding Establishments}">
                 <CollectionView.ItemTemplate>

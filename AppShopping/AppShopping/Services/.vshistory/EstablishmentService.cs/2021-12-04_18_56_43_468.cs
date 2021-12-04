@@ -33,17 +33,6 @@ namespace AppShopping.Services
                     Description = "Company",
                     Address = "2º Andar - Loja 05 - Setor bueno",
                     Phone = "(62) 88888-8888"
-                },
-
-                new Establishment()
-                {
-                    Id = 3,
-                    Type = EstablishmentType.Store,
-                    Logo = "",
-                    Name = "Calvin Klein",
-                    Description = "Fashion Company",
-                    Address = "1º Andar - Loja 02 - Setor bueno",
-                    Phone = "(62) 77777-7777"
                 }
             };
 

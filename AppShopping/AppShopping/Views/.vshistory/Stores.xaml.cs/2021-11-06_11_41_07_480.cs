@@ -1,5 +1,4 @@
-﻿using AppShopping.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +15,6 @@ namespace AppShopping.Views
         public Stores()
         {
             InitializeComponent();
-
-            BindingContext = new StoreViewModel();
         }
     }
 }

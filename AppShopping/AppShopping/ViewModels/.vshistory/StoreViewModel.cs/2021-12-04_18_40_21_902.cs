@@ -22,6 +22,8 @@ namespace AppShopping.ViewModels
             }
             set {
                 SetProperty (ref _establishments, value);
+                _establishments = value;
+                PropertyChangingEventArgs("Establishments");
             } 
         }
 

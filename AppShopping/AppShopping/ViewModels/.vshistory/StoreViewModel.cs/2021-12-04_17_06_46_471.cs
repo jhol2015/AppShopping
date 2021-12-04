@@ -16,13 +16,13 @@ namespace AppShopping.ViewModels
         public ICommand SearchCommand { get; set; }
         public List<Establishment> Establishments { get; set; }
        
-        public StoreViewModel()
+        public StoresViewModel()
         {
             SearchCommand = new Command(Search);
 
             var allEstablishment = new EstablishmentService().GetEstablishments();
-            var allStores = allEstablishment.Where(a => a.Type == EstablishmentType.Store).ToList();
-            Establishments = allStores;
+            var allRestaurants = allEstablishment.Where(a => a.Type == )
+            Establishment
         }
 
         private void Search()

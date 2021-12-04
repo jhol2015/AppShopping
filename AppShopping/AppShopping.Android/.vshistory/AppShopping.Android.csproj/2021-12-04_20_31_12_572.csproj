@@ -76,6 +76,9 @@
     <AndroidResource Include="Resources\values\colors.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\DolceGabbana.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\AppShopping\AppShopping.csproj">
       <Project>{5F3029F0-11BF-4DD7-B041-E09D8562D218}</Project>
       <Name>AppShopping</Name>
@@ -407,6 +410,15 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\splashscreen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo-calvin-klein-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo-hering-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo-renner-fundo-vermelho-256.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

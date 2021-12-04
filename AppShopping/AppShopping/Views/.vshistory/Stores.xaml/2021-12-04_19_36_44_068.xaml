@@ -19,7 +19,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <ContentView Padding="10">
-                            <Frame CornerRadius="0" HasShadow="False" BorderColor="{StaticResource BorderColor}" Padding="1">
+                            <Frame HasShadow="False" BorderColor="{StaticResource BorderColor}" Padding="1">
                                 <Grid ColumnDefinitions="1*, 1,  2*">
                                     <Image HeightRequest="80" Source="{Binding Logo}" Margin="10"/>
                                     <BoxView Grid.Column="1" BackgroundColor="black"/>

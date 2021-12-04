@@ -8,7 +8,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <!--Define o campo pesquisar da pagina buscar estabelecimentos.-->
+            <!--Define o campo pesquisar da pagina de buscar estabelecimentos.-->
             <Grid ColumnDefinitions="*, 70" RowDefinitions="50">
                 <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar"/>
                 <Button Command="{Binding SearchCommand}" Grid.Column="1" Text="Ok"/>
@@ -19,11 +19,11 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <ContentView Padding="10">
-                            <Frame CornerRadius="0" HasShadow="False" BorderColor="{StaticResource BorderColor}" Padding="1">
+                            <Frame BorderColor="Black" Padding="1">
                                 <Grid ColumnDefinitions="1*, 1,  2*">
-                                    <Image HeightRequest="80" Source="{Binding Logo}" Margin="10"/>
+                                    <Image HeightRequest="80" Source="{Binding Logo}"/>
                                     <BoxView Grid.Column="1" BackgroundColor="black"/>
-                                    <StackLayout Grid.Column="2" Margin="10">
+                                    <StackLayout Grid.Column="2">
                                         <Label Text="{Binding Name}"/>
                                         <Label Text="{Binding Description}" MaxLines="3"/>
                                     </StackLayout>

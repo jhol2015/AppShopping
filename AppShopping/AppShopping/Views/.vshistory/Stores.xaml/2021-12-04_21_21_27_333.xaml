@@ -3,27 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:AppShopping.ViewModels"
              x:Class="AppShopping.Views.Stores">
-
-    <!--Define imagem superior-->
-    <Shell.TitleView>
-        <ContentView>
-            <Image Source="TitleViewLogo.png" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="30"/>
-        </ContentView>
-    </Shell.TitleView>
-
-    <!--Chama a StoreViewModel na pagina para que posa ser usada nela-->
     <ContentPage.BindingContext>
         <viewModels:StoreViewModel/>
     </ContentPage.BindingContext>
-
     <ContentPage.Content>
         <StackLayout>
             <!--Define o campo pesquisar da pagina buscar estabelecimentos.-->
-            <Grid ColumnDefinitions="*, 70" RowDefinitions="50" Margin="10, 0">
-                <!--Frame configura a caixa de pesquisa-->
-                <Frame Padding="0" HasShadow="False" BorderColor="{StaticResource BorderColor}" CornerRadius="0">
-                    <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar"/>
-                </Frame>
+            <Grid ColumnDefinitions="*, 70" RowDefinitions="50">
+                <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar"/>
                 <Button Command="{Binding SearchCommand}" Grid.Column="1" Text="Ok"/>
             </Grid>
 

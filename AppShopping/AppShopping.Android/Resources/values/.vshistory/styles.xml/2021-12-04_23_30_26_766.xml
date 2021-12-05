@@ -20,7 +20,6 @@
     <item name="android:windowLightStatusBar">true</item>
     <item name="android:editTextStyle">@style/MainTheme.EditText</item>
   </style>
-  
   <!--Cria um stilo para mudar a linha do campo de pesquisa.-->
   <style name="MainTheme.EditText" parent="@android:style/Widget.EditText">
     <item name="android:background">@android:color/transparent</item>

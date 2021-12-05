@@ -21,7 +21,7 @@
             <!--Define o campo pesquisar da pagina buscar estabelecimentos.-->
             <Grid ColumnDefinitions="*, 70" RowDefinitions="50" Margin="10, 0">
                 <!--Frame configura a caixa de pesquisa-->
-                <Frame Padding="10, 0" HasShadow="False" BorderColor="{StaticResource BorderColor}" CornerRadius="0">
+                <Frame Padding="0" HasShadow="False" BorderColor="{StaticResource BorderColor}" CornerRadius="0">
                     <Entry Text="{Binding SearchWord}" Placeholder="Pesquisar" />
                 </Frame>
                 <Button Command="{Binding SearchCommand}" Grid.Column="1" Text="Ok" Style="{StaticResource PrimaryButton}"/>

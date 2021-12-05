@@ -15,23 +15,15 @@
          which is used to tint widgets -->
     <!--<item name="colorAccent">#FF4081</item>-->
     <!--essas linhas deixam a barra de cima do android da cor que definir na primeira linha-->
-    <item name="colorAccent">#F86237</item>
-    <item name="android:statusBarColor">#FFFFFF</item>
-    <item name="android:windowLightStatusBar">true</item>
-    <item name="android:editTextStyle">@style/MainTheme.EditText</item>
+        <item name="android:statusBarColor">#FFFFFF</item> 
+        <item name="android:windowLightStatusBar">true</item>
   </style>
-  
-  <!--Cria um stilo para mudar a linha do campo de pesquisa.-->
-  <style name="MainTheme.EditText" parent="@android:style/Widget.EditText">
-    <item name="android:background">@android:color/transparent</item>
-  </style>
-  
-  <style name="MainTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
-    <item name="android:windowBackground">@drawable/splashscreen</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowFullscreen">true</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowActionBar">true</item>
-  </style>
+    <style name="MainTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowBackground">@drawable/splashscreen</item>
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowFullscreen">true</item>
+      <item name="android:windowContentOverlay">@null</item>
+      <item name="android:windowActionBar">true</item>
+    </style>
 
 </resources>

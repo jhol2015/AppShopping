@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:AppShopping.ViewModels"
+             x:Class="AppShopping.Views.EstablishmentDetail">
+
+    <!--Define imagem superior-->
+    <Shell.TitleView>
+        <ContentView>
+            <Image Source="TitleViewLogo.png" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="30"/>
+        </ContentView>
+    </Shell.TitleView>
+
+    <ContentPage.BindingContext>
+        <viewModel:EstablishmentDetailViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Restaurante" Style="{StaticResource TitleType}"/>
+            <Label Text="{Binding Establishment.Name}"/>
+            <Frame>
+                <Grid ColumnDefinitions="1*, 1*, 1*, 1*, 1*, 1*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+                    <Image Source="{Binding Establishment.Logo}" Grid.ColumnSpan="2"/>
+                    <Label Text="{Binding Establishment.Name}" Grid.Column="2" Grid.ColumnSpan="4"/>
+                    <Label Text="{Binding Establishment.Description}" Grid.Row="1" Grid.ColumnSpan="6"/>
+
+                    <Image Source="pin" Grid.Row="2"/>
+                    <Label Text="Localização" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="2"/>
+                    <Label Text="{Binding Establishment.Address}" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="3"/>
+
+                    <Image Source="phone" Grid.Row="4"/>
+                    <Label Text="Telefone" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="4"/>
+                    <Label Text="{Binding Establishment.Phone}" Grid.ColumnSpan="5" Grid.Column="1" Grid.Row="5"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

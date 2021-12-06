@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:AppShopping.ViewModels"
+             x:Class="AppShopping.Views.EstablishmentDetail">
+
+    <!--Define imagem superior-->
+    <Shell.TitleView>
+        <ContentView>
+            <Image Source="TitleViewLogo.png" HorizontalOptions="Start" VerticalOptions="Center" HeightRequest="30"/>
+        </ContentView>
+    </Shell.TitleView>
+
+    <ContentPage.BindingContext>
+        <viewModels:EstablishmentDetailViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Restaurante" />
+            <Label Text="{Binding Establishment.Name}"/>
+            <Frame>
+                <Grid ColumnDefinitions="1*, 1*, 1*, 1*, 1*, 1*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+                    <Image Source="{Binding Establishment.Logo}" Grid.ColumnSpan="2"/>
+                    <Image Source="pin" Grid.Row="2"/>
+                    <Image Source="phone" Grid.Row="4"/>
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

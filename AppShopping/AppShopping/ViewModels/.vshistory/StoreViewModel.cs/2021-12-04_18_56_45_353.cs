@@ -26,14 +26,10 @@ namespace AppShopping.ViewModels
         }
 
         private List<Establishment> _allEstablishments;
-
-        public ICommand DetailCommand { get; set; }
        
-        //Construtor
         public StoreViewModel()
         {
             SearchCommand = new Command(Search);
-            DetailCommand = new Command<Establishment>(Detail);
 
             //Representa a busca na API
             var allEstablishment = new EstablishmentService().GetEstablishments();
@@ -48,10 +44,5 @@ namespace AppShopping.ViewModels
             Establishments =  _allEstablishments.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();   
         }
 
-        private void Detail(Establishment establishment)
-        {
-            // TODO -> Shell -> GoTo -> EstablishmentDetail
-            Shell.Current.GoToAsync("establishment/detail");
-        }
     }
 }

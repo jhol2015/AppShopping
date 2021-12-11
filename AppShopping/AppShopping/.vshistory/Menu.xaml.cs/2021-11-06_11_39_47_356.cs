@@ -15,8 +15,6 @@ namespace AppShopping
         public Menu()
         {
             InitializeComponent();
-
-            Routing.RegisterRoute("establishment/detail", typeof(Views.EstablishmentDetail));
         }
     }
 }

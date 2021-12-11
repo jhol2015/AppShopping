@@ -33,7 +33,7 @@ namespace AppShopping.ViewModels
         public StoreViewModel()
         {
             SearchCommand = new Command(Search);
-            DetailCommand = new Command<Establishment>(Detail);
+            DetailCommand = new Command(Detail);
 
             //Representa a busca na API
             var allEstablishment = new EstablishmentService().GetEstablishments();
@@ -48,7 +48,7 @@ namespace AppShopping.ViewModels
             Establishments =  _allEstablishments.Where(a => a.Name.ToLower().Contains(SearchWord.ToLower())).ToList();   
         }
 
-        private void Detail(Establishment establishment)
+        private void Detail()
         {
             // TODO -> Shell -> GoTo -> EstablishmentDetail
             Shell.Current.GoToAsync("establishment/detail");

@@ -52,7 +52,7 @@ namespace AppShopping.ViewModels
         private void Detail(Establishment establishment)
         {
             String establishmentSerialized = JsonConvert.SerializeObject(establishment);
-            Shell.Current.GoToAsync($"establishment/detail?establishmentSerialized={Uri.EscapeDataString(establishmentSerialized)}");
+            Shell.Current.GoToAsync("establishment/detail");
         }
     }
 }

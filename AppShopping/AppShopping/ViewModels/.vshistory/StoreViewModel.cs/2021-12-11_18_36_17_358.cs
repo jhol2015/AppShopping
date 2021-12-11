@@ -8,7 +8,6 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using AppShopping.Libraries.Enums;
 using AppShopping.Libraries.Helpers.MVVM;
-using Newtonsoft.Json;
 
 namespace AppShopping.ViewModels
 {
@@ -51,8 +50,8 @@ namespace AppShopping.ViewModels
 
         private void Detail(Establishment establishment)
         {
-            String establishmentSerialized = JsonConvert.SerializeObject(establishment);
-            Shell.Current.GoToAsync($"establishment/detail?establishmentSerialized={Uri.EscapeDataString(establishmentSerialized)}");
+            // TODO -> Shell -> GoTo -> EstablishmentDetail
+            Shell.Current.GoToAsync("establishment/detail");
         }
     }
 }
